@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+    font-family: "Poppins", "League Spartan", "Outfit", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#navigationTabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100vh;
+    border-right: 0.3px solid rgb(239, 239, 239);
+    outline: 0;
+}
+
+.birdy {
+    margin-top: -30px;
+    outline: 0;
+    font-size: 25px;
+    margin-right: 90px;
+}
+
+#navigationList {
+    text-decoration: none;
+    margin-left: 100px;
+    align-self: center;
+    outline: 0;
+}
+
+#navigationList li {
+    list-style: none;
+    font-size: 18px;
+    width: 248px;
+    outline: 0;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
+
+#navigationList li.active {
+    font-weight: 600;
+}
+
+#navigationList li:hover {
+    background-color: rgb(0, 157, 230);
+    border-radius: 20px;
+    width: 240px;
+}
+
+#navigationList li i {
+    margin: 20px;
+    font-size: 20px;
+    outline: 0;
+}
+
+#tweetButton {
+    outline: 0;
+    height: 50px;
+    width: 230px;
+    border-radius: 30px;
+    border: 0;
+    background-color: rgb(0, 157, 230);
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.1s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#tweetButton:hover {
+    background-color: white;
+    color: rgb(0, 174, 255);
+    border: 1px solid rgb(0, 174, 255);
+    transition: 0.1s;
+}
+
+#profileBox {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 60px;
+    width: 250px;
+    box-shadow: 1px 1px 1px 1px grey;
+    border-radius: 3px;
+    outline: 0;
+    margin-left: 70px;
+}
+
+.profilePicture {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    outline: 0;
+    margin-right: 5px;
+}
+
+#profileUsername {
+    outline: 0;
+}
+
+#profileUsername h5 {
+    font-size: 13px;
+    outline: 0;
+}
+
+#profileUsername span {
+    color: gray;
+    font-size: 13px;
+    outline: 0;
+}
+
+/* end of navigation tabs stylings */
+
+
+
+
+/* start of  timeline */
+
+#timeline {
+    outline: 0;
+    width: 45%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-right: 0.3px solid rgb(239, 239, 239);
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#heading {
+    z-index: 9;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 10px 0 10px 10px;
+    position: sticky;
+    margin-top: 30px;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#decisions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#decisions ul {
+    display: flex;
+    text-decoration: none;
+}
+
+#decisions li {
+    font-size: 14px;
+    list-style: none;
+    padding: 40px 160px 0 80px;
+}
+
+#theChoosenOne {
+    font-weight: 600;
+}
+
+#theChoosenOne::after {
+    content: " ";
+    background-color: rgb(0, 162, 255);
+    margin-top: 5px;
+    height: 4px;
+    width: auto;
+    display: flex;
+    border-radius: 40px;
+}
+
+#post {
+    height: 65px;
+    display: flex;
+}
+
+.profilePicture1 {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#texty {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 55px;
+    width: 85%;
+    border: 0;
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+
+#textMediaAndTweetButton {
+    display: flex;
+    height: 30px;
+    margin-left: 65px;
+    align-items: center;
+    padding-top: 13px;
+}
+
+#textMediaAndTweetButton i {
+    font-size: 16px;
+    padding-left: 18px;
+    color: rgb(0, 157, 230);
+    cursor: pointer;
+}
+
+
+#textMediaAndTweetButton button {
+    margin-left: 250px;
+    background-color: rgb(0, 174, 255);
+    opacity: 0.5;
+    color: white;
+    border: 0;
+    width: 80px;
+    height: 35px;
+    border-radius: 30px;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#showNumberOfTweets {
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: rgb(0, 115, 255);
+    opacity: 0.6;
+    border: 1px solid rgb(224, 224, 224);
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.tweets {
+    display: flex;
+    height: auto;
+    width: 100%;
+    border-top: 1px solid rgb(202, 202, 202);
+}
+
+.tweetHeadings {
+    height: 20px;
+    margin-left: 5px;
+    display: flex;
+    width: auto;
+    margin-top: 15px;
+}
+
+.tweetHeadings .username {
+    font-size: 15px;
+    height: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.tweet {
+    /* outline: 0; */
+    font-size: 14px;
+    color: black;
+    font-weight: 300;
+    margin: 5px;
+    width: auto;
+}
+
+.interactions {
+    width: 100%;
+    /* background-color: purple; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.interactions i {
+    cursor: pointer;
+    color: grey;
+    padding-left: 5px;
+    width: 100%;
+}
+
+.interactions span {
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 5px;
+    height: 0px;
+}
+
+/* TRENDS COLUMN */
+
+#trends {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 38%;
+    position: relative;
+    margin-top: 13px;
+    margin-left: 30px;
+}
+
+#searchBox {
+    width: 350px;
+    height: 40px;
+    background-color: rgb(249, 249, 249);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#searchBox i {
+    padding: 10px;
+    border-radius: 30px;
+}
+
+#search {
+    width: 350px;
+    height: 40px;
+    background-color: rgb(249, 249, 249);
+    border-radius: 30px;
+    padding: 15px;
+    color: black;
+    border: 0;
+}
+
+#trending {
+    height: 700px;
+    width: 350px;
+    background-color: rgb(249, 249, 249);
+    padding-left: 10px;
+    border-radius: 20px;
+}
+
+#trending h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+
+.topic {
+    margin-top: 10px;
+    margin-left: 2px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    ;
+}
+
+.parallel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    color: grey;
+}
+
+.topic span {
+    color: grey;
+    font-size: 11px;
+    width: auto;
+}
+
+/* .topic span i {
+    margin-left: 60%;
+} */
+
+.topic h3 {
+    font-size: 14px;
+    width: auto;
+    font-weight: 600;
+}
